@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWinController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" y="55.0">
+         <image>
+            <Image url="@../image/back.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <TableView prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: transparent; -fx-border-color: white;" fx:id="tableView">
+        <columns>
+          <TableColumn editable="false" prefWidth="200.0" resizable="false" text="Name" fx:id="empNameCol" />
+          <TableColumn editable="false" prefWidth="200.0" resizable="false" text="Surname" fx:id="empSurnameCol" />
+            <TableColumn editable="false" prefWidth="200.0" resizable="false" text="eMail" fx:id="empEMailCol" />
+        </columns>
+      </TableView>
+      <Button layoutX="50.0" layoutY="355.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 8;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Calibri Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="355.0" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 8;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="Calibri Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="450.0" layoutY="355.0" mnemonicParsing="false" onAction="#remove" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 8;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Calibri Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
